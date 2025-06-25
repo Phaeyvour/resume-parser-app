@@ -34,7 +34,7 @@ def extract_text(file_path):
     else:
         raise ValueError("Unsupported file format. Use PDF, DOCX or TXT.")
 
-    # 👇 Preprocess to improve link extraction
+    # Preprocess to improve link extraction
     text = text.replace('\n', ' ')
     
     return text.strip()
